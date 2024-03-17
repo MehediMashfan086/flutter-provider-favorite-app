@@ -9,4 +9,9 @@ class FavouriteItemProvider with ChangeNotifier {
     _selectedItem.add(value);
     notifyListeners();
   }
+
+  void removeItem(int value) {
+    _selectedItem.remove(value);
+    notifyListeners();
+  }
 }
